@@ -1,4 +1,3 @@
-import { ROUTES } from "../../../routes";
 import { ROUTE_PATHS } from "../../../routes/path";
 
 export type HeaderLinksType = {

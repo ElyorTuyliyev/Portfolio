@@ -10,7 +10,7 @@ const HeaderStyle = styled.header`
   }
 
   .header__title {
-    color: ${colors.grey[50]};
+    /* color: ${colors.grey[50]}; */
     font-size: 24px;
     font-weight: 600;
   }
@@ -21,7 +21,7 @@ const HeaderStyle = styled.header`
   }
 
   .header__links {
-    color: ${colors.grey[50]};
+    /* color: ${colors.grey[50]}; */
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;

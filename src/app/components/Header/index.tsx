@@ -3,10 +3,9 @@ import React from "react";
 import HeaderStyle from "./Hedaer.style";
 import { HEADER_LINKS } from "./constants";
 import { Link } from "react-router-dom";
-import { ROUTE_PATHS } from "../../routes/path";
-import { ROUTES } from "../../routes";
+import { HedaerProps } from "../../types";
 
-const Heder = () => {
+const Header = ({ links }: HedaerProps) => {
   return (
     <Container maxWidth="lg">
       <HeaderStyle>
@@ -27,4 +26,4 @@ const Heder = () => {
   );
 };
 
-export default Heder;
+export default Header;
