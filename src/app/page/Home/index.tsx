@@ -5,7 +5,13 @@ import { Box, Typography } from "@mui/material";
 import Me from "./assets/photo_2024-05-30_00-30-13.jpg";
 
 import TelegramIcon from "@mui/icons-material/Telegram";
-import { Facebook, Instagram, LinkedIn, WhatsApp } from "@mui/icons-material";
+import {
+  Email,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  WhatsApp,
+} from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -46,6 +52,11 @@ const Home = () => {
             <Box className="home__me-links-wrapper">
               <Link target="_blank" to={"https://www.facebook.com/"}>
                 <Facebook />
+              </Link>
+            </Box>
+            <Box className="home__me-links-wrapper">
+              <Link target="_blank" to={"https://mail.google.com/"}>
+                <Email />
               </Link>
             </Box>
           </Box>

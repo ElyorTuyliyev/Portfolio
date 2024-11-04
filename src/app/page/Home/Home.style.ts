@@ -31,19 +31,29 @@ export const HomeStyle = styled.main`
 
   .home__me-about {
     padding: 20px 0 18px 0;
+    font-size: 20px;
   }
 
   .home__links-me {
     display: flex;
-    gap: 5;
-    justify-content: space-between;
+    gap: 32px;
+    padding: 20px 0 0 0;
     color: ${colors.grey[50]};
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 50%;
+      border: 3px solid ${colors.blue[300]};
+      color: ${colors.blue[400]};
+    }
   }
 
   .home__img-wrapper {
     width: 400px;
-
     img {
+      box-shadow: 0 0 500px ${colors.blue[500]};
       width: 100%;
       border-radius: 50%;
     }

@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import { Box, Container } from "@mui/material";
 import { LayouteStyle } from "./Layoute.style";
-import { LayoutProps } from "../types";
 import { HEADER_LINKS } from "../components/Header/constants";
+import { LayoutProps } from "../types";
 
 const Layoute = ({ children }: LayoutProps) => {
   return (
