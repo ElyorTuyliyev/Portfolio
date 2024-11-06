@@ -6,20 +6,12 @@ export const SkillStyle = styled.main`
     color: ${colors.grey[100]};
     font-weight: 500;
     font-size: 50px;
-    padding: 10px 0;
+    padding: 10px 0 20px 0;
   }
 
   .skill__img-wrapper {
-    display: flex;
-  }
-
-  .skill__img-box {
-    max-width: 200px;
-    box-shadow: 0 0 10px ${colors.blue[400]};
-    border-radius: 10px;
-    padding: 16px 8px;
-    img {
-      width: 100%;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 `;

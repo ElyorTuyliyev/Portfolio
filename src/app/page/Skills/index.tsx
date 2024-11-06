@@ -1,9 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import { SkillStyle } from "./skill.style";
-
-import htmlImg from "./assets/html-img.png";
-import { Link } from "react-router-dom";
+import Card from "./components/Card";
+import { CARD_TYPE } from "./constants";
 
 const Skills = () => {
   return (
@@ -12,14 +10,10 @@ const Skills = () => {
         <Typography variant="h2" className="skill__title">
           Skills
         </Typography>
-
         <Box className="skill__img-wrapper">
-          <Link
-            to={"https://www.w3schools.com/html/default.asp"}
-            className="skill__img-box"
-          >
-            <img src={htmlImg} alt="html-img" />
-          </Link>
+          {CARD_TYPE.map(({ alt, img, link }) => (
+            <Card alt={alt} img={img} link={link} />
+          ))}
         </Box>
       </Box>
     </SkillStyle>
