@@ -2,7 +2,6 @@ import { Box, Button, Tooltip, Typography } from "@mui/material";
 import { ContactStyle } from "./Contact.style";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CONTACTS } from "./constants";
-import { useRef, useState } from "react";
 
 const Contact = () => {
   return (

@@ -17,7 +17,7 @@ interface ContactsType {
 export const CONTACTS: ContactsType[] = [
   {
     title: "Tel:",
-    text: "+998884848833",
+    text: "+998884838833 +998884848833",
     icon: <Phone />,
   },
   {
