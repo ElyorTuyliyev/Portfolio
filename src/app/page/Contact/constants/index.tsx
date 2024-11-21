@@ -8,7 +8,7 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 
-interface ContactsType {
+export interface ContactsType {
   title: string;
   text: string;
   icon: JSX.Element;

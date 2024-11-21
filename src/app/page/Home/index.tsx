@@ -1,6 +1,6 @@
 import React from "react";
 import { HomeStyle } from "./Home.style";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 import Me from "./assets/photo_2024-05-30_00-30-13.jpg";
 
@@ -60,6 +60,9 @@ const Home = () => {
               </Link>
             </Box>
           </Box>
+          <Button className="home__btn" variant="contained">
+            Download Pdf
+          </Button>
         </Box>
         <Box className="home__img-wrapper">
           <img src={Me} alt="me-img" />

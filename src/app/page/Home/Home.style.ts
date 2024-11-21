@@ -47,6 +47,7 @@ export const HomeStyle = styled.main`
       border-radius: 50%;
       border: 3px solid ${colors.blue[300]};
       color: ${colors.blue[400]};
+      box-shadow: 0 0 5 px #2196f3;
     }
   }
 
@@ -57,5 +58,11 @@ export const HomeStyle = styled.main`
       width: 100%;
       border-radius: 50%;
     }
+  }
+
+  .home__btn {
+    margin-top: 24px;
+    text-transform: capitalize;
+    box-shadow: 0 0 15px #2196f3;
   }
 `;
