@@ -13,6 +13,7 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import { Links } from "./constants";
 
 const Home = () => {
   return (
@@ -29,36 +30,13 @@ const Home = () => {
             veritatis!
           </Typography>
           <Box className="home__links-me">
-            <Box className="home__me-links-wrapper">
-              <Link target="_blank" to={"https://t.me/+998884848833"}>
-                <TelegramIcon />
-              </Link>
-            </Box>
-            <Box className="home__me-links-wrapper">
-              <Link target="_blank" to={"https://www.instagram.com/"}>
-                <Instagram />
-              </Link>
-            </Box>
-            <Box className="home__me-links-wrapper">
-              <Link target="_blank" to={"https://www.linkedin.com/feed/"}>
-                <LinkedIn />
-              </Link>
-            </Box>
-            <Box className="home__me-links-wrapper">
-              <Link target="_blank" to={"https://web.whatsapp.com/"}>
-                <WhatsApp />
-              </Link>
-            </Box>
-            <Box className="home__me-links-wrapper">
-              <Link target="_blank" to={"https://www.facebook.com/"}>
-                <Facebook />
-              </Link>
-            </Box>
-            <Box className="home__me-links-wrapper">
-              <Link target="_blank" to={"https://mail.google.com/"}>
-                <Email />
-              </Link>
-            </Box>
+            {Links.map(({ homeIcon, link }) => (
+              <Box className="home__me-links-wrapper">
+                <Link target="_blank" to={link}>
+                  {homeIcon}
+                </Link>
+              </Box>
+            ))}
           </Box>
           <Button className="home__btn" variant="contained">
             Download Pdf
