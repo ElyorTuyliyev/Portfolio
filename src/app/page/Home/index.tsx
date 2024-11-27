@@ -4,18 +4,19 @@ import { Box, Button, Typography } from "@mui/material";
 
 import Me from "./assets/photo_2024-05-30_00-30-13.jpg";
 
-import TelegramIcon from "@mui/icons-material/Telegram";
-import {
-  Email,
-  Facebook,
-  Instagram,
-  LinkedIn,
-  WhatsApp,
-} from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import { Links } from "./constants";
+import links from "./constants";
 
 const Home = () => {
+  const copyToClipboard = (text: string) => {
+    console.log("text", text);
+    var textField = document.createElement("textarea");
+    textField.innerText = text;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+  };
   return (
     <HomeStyle>
       <Box className="home__wrapper">
@@ -30,9 +31,13 @@ const Home = () => {
             veritatis!
           </Typography>
           <Box className="home__links-me">
-            {Links.map(({ homeIcon, link }) => (
+            {links.map(({ homeIcon, link }) => (
               <Box className="home__me-links-wrapper">
-                <Link target="_blank" to={link}>
+                <Link
+                  target="_blank"
+                  to={link}
+                  onClick={() => copyToClipboard(link)}
+                >
                   {homeIcon}
                 </Link>
               </Box>
