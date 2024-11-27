@@ -4,6 +4,15 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CONTACTS } from "./constants";
 
 const Contact = () => {
+  const copyToClipboard = async (text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log("Copied to clipboard:", text);
+    } catch (err) {
+      console.error("Failed to copy!", err);
+    }
+  };
+
   return (
     <ContactStyle>
       <Box>
@@ -11,17 +20,23 @@ const Contact = () => {
           Contacts
         </Typography>
         <Box className="contact__wrapper">
-          {CONTACTS.map(({ title, text, icon }) => (
-            <Box className="contact__box">
+          {CONTACTS.map(({ title, text, icon }, index) => (
+            <Box className="contact__box" key={index}>
               <Box className="contact__text-box">
                 <Box>{icon}</Box>
-                <Box className="conatct__text-wrapper">
+                <Box className="contact__text-wrapper">
                   <Typography>{title}</Typography>
                   <Typography>{text}</Typography>
                 </Box>
               </Box>
-              <Tooltip title="copy" placement="top">
-                <ContentCopyIcon />
+              <Tooltip title="Copy" placement="top">
+                <Box
+                  onClick={() => copyToClipboard(text)}
+                  style={{ cursor: "pointer" }}
+                  aria-label={`Copy ${title} to clipboard`}
+                >
+                  <ContentCopyIcon />
+                </Box>
               </Tooltip>
             </Box>
           ))}
