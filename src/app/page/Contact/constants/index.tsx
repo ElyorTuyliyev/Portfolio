@@ -27,7 +27,7 @@ export const CONTACTS: ContactsType[] = [
   },
   {
     title: "Telegram:",
-    text: "https://t.me/Elyor_o2_07",
+    text: "https://t.me/Elyor_o2_07 ",
     icon: <Telegram />,
   },
   {
