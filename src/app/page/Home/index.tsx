@@ -14,9 +14,12 @@ const Home = () => {
         <Box className="home__text-wrapper">
           <Typography className="home__text-intro">Hello it's me </Typography>
           <Typography className="home__me-name">Elyor To'yliyev</Typography>
-          <Typography className="home__me-dev">
-            And I am Frontend developer
-          </Typography>
+          <Box className="home__me-dev">
+            And I'm
+            <Typography className="home__text-dev">
+              Frontend developer
+            </Typography>
+          </Box>
           <Typography className="home__me-about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
             veritatis!

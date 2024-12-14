@@ -19,11 +19,18 @@ export const HomeStyle = styled.main`
   }
 
   .home__text-intro,
-  .home__me-dev {
+  .home__me-dev,
+  .home__text-dev {
     font-size: 40px;
     font-weight: 700;
+    display: flex;
+    gap: 8px;
   }
 
+  .home__text-dev {
+    font-weight: 800;
+    color: ${colors.blue[500]};
+  }
   .home__me-name {
     font-size: 50px;
     font-weight: 900;
@@ -63,6 +70,10 @@ export const HomeStyle = styled.main`
   .home__btn {
     margin-top: 24px;
     text-transform: capitalize;
-    box-shadow: 0 0 15px #2196f3;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #2196f3;
+    :hover {
+      box-shadow: 0 0 11px #2196f3;
+    }
   }
 `;

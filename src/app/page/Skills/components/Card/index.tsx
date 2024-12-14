@@ -1,7 +1,6 @@
 import React from "react";
 import { CardStyle } from "./Card.style";
 import { Link } from "react-router-dom";
-import { Box } from "@mui/material";
 
 type Props = {
   link: string;
