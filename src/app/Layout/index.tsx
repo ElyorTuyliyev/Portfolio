@@ -4,7 +4,7 @@ import { LayouteStyle } from "./Layoute.style";
 import { HEADER_LINKS } from "../components/Header/constants";
 import { LayoutProps } from "../types";
 
-const Layoute = ({ children }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <LayouteStyle>
       <Header links={HEADER_LINKS} />
@@ -15,4 +15,4 @@ const Layoute = ({ children }: LayoutProps) => {
   );
 };
 
-export default Layoute;
+export default Layout;

@@ -1,16 +1,16 @@
 import { Route, Routes } from "react-router-dom";
 import { ROUTES } from "./app/routes";
-import Layoute from "./app/Layout";
+import Layout from "./app/Layout";
 
 function App() {
   return (
-    <Layoute>
+    <Layout>
       <Routes>
         {ROUTES.map(({ path, component }) => (
           <Route path={path} element={component} />
         ))}
       </Routes>
-    </Layoute>
+    </Layout>
   );
 }
 

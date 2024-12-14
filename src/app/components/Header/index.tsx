@@ -5,7 +5,7 @@ import { HEADER_LINKS } from "./constants";
 import { Link } from "react-router-dom";
 import { HedaerProps } from "../../types";
 
-const Header = ({ links }: HedaerProps) => {
+const Header = ({}: HedaerProps) => {
   return (
     <Container maxWidth="lg">
       <HeaderStyle>
@@ -15,7 +15,7 @@ const Header = ({ links }: HedaerProps) => {
           </Typography>
           <Box className="header__links-wrapper">
             {HEADER_LINKS.map(({ title, path }) => (
-              <Link to={path} className="header__links">
+              <Link to={path} className="header__links  header__link-active">
                 {title}
               </Link>
             ))}

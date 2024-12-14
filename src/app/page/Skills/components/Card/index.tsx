@@ -11,7 +11,7 @@ type Props = {
 const Card = ({ link, img, alt }: Props) => {
   return (
     <CardStyle>
-      <Link to={link} className="skill__img-box">
+      <Link to={link} target="blank" className="skill__img-box">
         <img src={img} alt={alt} />
       </Link>
     </CardStyle>
