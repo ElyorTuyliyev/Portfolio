@@ -27,12 +27,6 @@ const HeaderStyle = styled.header`
     cursor: pointer;
     text-decoration: none;
   }
-
-  .header__link-active {
-    border: 2px solid red;
-    padding: 5px 10px;
-    border-radius: 8px;
-  }
 `;
 
 export default HeaderStyle;
