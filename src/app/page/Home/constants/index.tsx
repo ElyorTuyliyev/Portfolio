@@ -20,7 +20,7 @@ const links: LinkType[] = [
     homeIcon: <TelegramIcon />,
   },
   {
-    link: "https://t.me/+998884848833",
+    link: "https://www.instagram.com/e1_programmer/",
     homeIcon: <Instagram />,
   },
   {
