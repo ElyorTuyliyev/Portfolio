@@ -72,6 +72,10 @@ export const HomeStyle = styled.main`
     text-transform: capitalize;
     border-radius: 12px;
     box-shadow: 0 0 10px #2196f3;
+    a {
+      text-decoration: none;
+      color: ${colors.grey[50]};
+    }
     :hover {
       box-shadow: 0 0 11px #2196f3;
     }

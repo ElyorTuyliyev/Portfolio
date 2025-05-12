@@ -3,6 +3,7 @@ import { HomeStyle } from "./Home.style";
 import { Box, Button, Typography } from "@mui/material";
 
 import Me from "./assets/photo_2024-05-30_00-30-13.jpg";
+import resume from "./assets/resume-new.pdf";
 
 import { Link } from "react-router-dom";
 import links from "./constants";
@@ -34,7 +35,9 @@ const Home = () => {
             ))}
           </Box>
           <Button className="home__btn" variant="contained">
-            Download Pdf
+            <a href={resume} download>
+              Download Pdf
+            </a>
           </Button>
         </Box>
         <Box className="home__img-wrapper">

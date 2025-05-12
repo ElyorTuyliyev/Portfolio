@@ -10,6 +10,10 @@ declare module ".svg" {
   const value: string;
   export default value;
 }
+declare module "*.pdf" {
+  const value: string;
+  export default value;
+}
 declare module "*.mp4" {
   const value: any;
   export default value;

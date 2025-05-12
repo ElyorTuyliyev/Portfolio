@@ -27,7 +27,7 @@ export const CONTACTS: ContactsType[] = [
   },
   {
     title: "Telegram:",
-    text: "https://t.me/Elyor_o2_07 ",
+    text: "https://t.me/+998884848833",
     icon: <Telegram />,
   },
   {
@@ -37,7 +37,7 @@ export const CONTACTS: ContactsType[] = [
   },
   {
     title: "Instagram:",
-    text: "frontend_developer0207",
+    text: "e1_programmer",
     icon: <Instagram />,
   },
   {

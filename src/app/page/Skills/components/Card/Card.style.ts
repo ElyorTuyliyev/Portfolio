@@ -8,5 +8,6 @@ export const CardStyle = styled.div`
     width: 100%;
     border-radius: 10px;
     padding: 16px 8px;
+    object-fit: contain;
   }
 `;
