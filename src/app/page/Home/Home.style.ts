@@ -70,7 +70,7 @@ export const HomeStyle = styled.main`
   .home__btn {
     margin-top: 24px;
     text-transform: capitalize;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 0 10px #2196f3;
     a {
       text-decoration: none;
