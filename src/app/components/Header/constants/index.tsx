@@ -19,10 +19,6 @@ export const HEADER_LINKS: HeaderLinksType[] = [
     path: ROUTE_PATHS.SKILLS,
   },
   {
-    title: "Projects",
-    path: ROUTE_PATHS.PROJECTS,
-  },
-  {
     title: "Contacts",
     path: ROUTE_PATHS.CONTACTS,
   },

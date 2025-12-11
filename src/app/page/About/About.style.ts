@@ -13,6 +13,10 @@ export const AboutStyle = styled.div`
     border-radius: 8px;
   }
 
+  .about__text-wraapper {
+     display: flex;
+  }
+
   .about__text {
     line-height: 30px;
     color: ${colors.grey[50]};

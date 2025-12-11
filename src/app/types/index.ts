@@ -7,7 +7,7 @@ export type LayoutProps = {
   children: ChildrenType;
 };
 
-export type HedaerProps = {
+export type HeaderProps = {
   links: HeaderLinksType[];
 };
 

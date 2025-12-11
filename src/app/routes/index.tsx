@@ -4,7 +4,6 @@ import Home from "../page/Home";
 import { ROUTE_PATHS } from "./path";
 import About from "../page/About";
 import Skills from "../page/Skills";
-import Project from "../page/Project";
 import Contact from "../page/Contact";
 
 type RouteType = {
@@ -12,7 +11,7 @@ type RouteType = {
   component: ReactNode;
 };
 
-const { ABOUT, CONTACTS, HOME, PROJECTS, SKILLS } = ROUTE_PATHS;
+const { ABOUT, CONTACTS, HOME, SKILLS } = ROUTE_PATHS;
 
 export const ROUTES: RouteType[] = [
   {
@@ -30,10 +29,6 @@ export const ROUTES: RouteType[] = [
   {
     path: SKILLS,
     component: <Skills />,
-  },
-  {
-    path: PROJECTS,
-    component: <Project />,
   },
   {
     path: CONTACTS,

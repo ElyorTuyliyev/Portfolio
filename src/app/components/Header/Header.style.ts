@@ -11,6 +11,8 @@ const HeaderStyle = styled.header`
 
   .header__title {
     color: ${colors.grey[50]};
+    text-decoration:none;
+    font-style: italic;
     font-size: 24px;
     font-weight: 600;
   }
@@ -28,5 +30,4 @@ const HeaderStyle = styled.header`
     text-decoration: none;
   }
 `;
-
 export default HeaderStyle;

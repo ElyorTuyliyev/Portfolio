@@ -1,4 +1,4 @@
-import { Box, Button, Tooltip, Typography } from "@mui/material";
+import { Box,  Tooltip, Typography } from "@mui/material";
 import { ContactStyle } from "./Contact.style";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CONTACTS } from "./constants";

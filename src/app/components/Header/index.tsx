@@ -1,18 +1,26 @@
-import { Box, Container, Typography } from "@mui/material";
-import React from "react";
-import HeaderStyle from "./Hedaer.style";
+import { Box, Container } from "@mui/material";
+import HeaderStyle from "./Header.style";
 import { HEADER_LINKS } from "./constants";
 import { Link } from "react-router-dom";
-import { HedaerProps } from "../../types";
+import { HeaderProps } from "../../types";
+import { ROUTE_PATHS } from "../../routes/path";
+import GradientText from "../../Animation/Gradiant-text";
 
-const Header = ({}: HedaerProps) => {
+const Header = ({}: HeaderProps) => {
   return (
     <Container maxWidth="lg">
       <HeaderStyle>
         <Box className="header__wrapper">
-          <Typography className="header__title" variant="subtitle1">
-            Portfolio
-          </Typography>
+          <Link className="header__title" to={ROUTE_PATHS.HOME}>
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class"
+            >
+              Portfolio
+            </GradientText>
+          </Link>
           <Box className="header__links-wrapper">
             {HEADER_LINKS.map(({ title, path }) => (
               <Link to={path} className="header__links  header__link-active">

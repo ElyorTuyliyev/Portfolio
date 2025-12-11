@@ -1,4 +1,3 @@
-import React from "react";
 import { HomeStyle } from "./Home.style";
 import { Box, Button, Typography } from "@mui/material";
 
@@ -7,6 +6,7 @@ import resume from "./assets/resume-new.pdf";
 
 import { Link } from "react-router-dom";
 import links from "./constants";
+import TextType from "../../Animation/Text-type";
 
 const Home = () => {
   return (
@@ -16,15 +16,16 @@ const Home = () => {
           <Typography className="home__text-intro">Hello it's me </Typography>
           <Typography className="home__me-name">Elyor To'yliyev</Typography>
           <Box className="home__me-dev">
-            And I'm
-            <Typography className="home__text-dev">
-              Frontend developer
-            </Typography>
+            <TextType
+              className="home__text-dev"
+              text={["And I'm Frontend developer"]}
+              typingSpeed={100}
+              pauseDuration={2500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </Box>
-          <Typography className="home__me-about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-            veritatis!
-          </Typography>
+
           <Box className="home__links-me">
             {links.map(({ homeIcon, link }) => (
               <Box className="home__me-links-wrapper">
@@ -36,7 +37,7 @@ const Home = () => {
           </Box>
           <Button className="home__btn" variant="contained">
             <a href={resume} download>
-              Download Pdf
+              Download Resume
             </a>
           </Button>
         </Box>

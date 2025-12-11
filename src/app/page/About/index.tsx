@@ -13,18 +13,22 @@ const About = () => {
         </Box>
         <Box className="about__text-wrapper">
           <Typography className="about__text">
-            Motivated and detail-oriented Frontend Developer at Alitech Website
-            Solutions, with hands-on experience in building responsive,
-            accessible, and high-performance web applications using modern
-            JavaScript technologies such as React.js, Next.js, Redux.js, and
-            Webpack. Combining strong technical expertise with a solid academic
-            foundation in Accounting and Financial Management, currently being
-            pursued at the Samarkand Branch of Tashkent State Agrarian
-            University, I offer a unique perspective that bridges technology and
-            finance. Passionate about continuous learning and innovation, I
-            strive to apply cutting-edge web technologies to develop scalable,
-            userfocused digital solutions that solve real-world challenges and
-            deliver impactful user experiences
+            I am a motivated and detail-oriented Junior Frontend Developer with
+            hands-on experience in building responsive, high-performance, and
+            user-friendly web applications. I have strong skills in HTML, CSS,
+            SASS, JavaScript, TypeScript, React, Next.js, Redux Toolkit, and
+            version control with Git and GitHub, with a solid understanding of
+            component-based architecture, state management, and adaptive UI
+            design. My focus is on writing clean, scalable, and maintainable
+            code that delivers seamless user experiences.
+          </Typography>
+          <Typography  className="about__text">
+            I am passionate about creating digital solutions that streamline
+            business processes, including cost calculation systems, product and
+            salary management modules, and e-commerce platforms. I thrive in
+            collaborative and dynamic environments, eager to learn new
+            technologies, follow best practices, and contribute to innovative
+            projects.
           </Typography>
         </Box>
       </Box>
