@@ -1,4 +1,4 @@
-import { Box,  Tooltip, Typography } from "@mui/material";
+import { Box, Tooltip, Typography } from "@mui/material";
 import { ContactStyle } from "./Contact.style";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CONTACTS } from "./constants";
@@ -15,9 +15,6 @@ const Contact = () => {
   return (
     <ContactStyle>
       <Box>
-        <Typography variant="h3" className="contact__title">
-          Contacts
-        </Typography>
         <Box className="contact__wrapper">
           {CONTACTS.map(({ title, text, icon }, index) => (
             <Box className="contact__box" key={index}>

@@ -7,10 +7,6 @@ export type HeaderLinksType = {
 
 export const HEADER_LINKS: HeaderLinksType[] = [
   {
-    title: "Home",
-    path: ROUTE_PATHS.HOME,
-  },
-  {
     title: "About",
     path: ROUTE_PATHS.ABOUT,
   },

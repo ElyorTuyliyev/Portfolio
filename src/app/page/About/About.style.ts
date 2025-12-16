@@ -10,7 +10,9 @@ export const AboutStyle = styled.div`
   }
 
   .about__img {
-    border-radius: 8px;
+    width: 400px;
+    border-radius: 50%;
+
   }
 
   .about__text-wraapper {

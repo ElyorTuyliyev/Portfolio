@@ -8,7 +8,6 @@ export const HomeStyle = styled.main`
     gap: 8px;
     justify-content: space-between;
     align-items: center;
-    height: 89.7vh;
   }
 
   .home__text-intro,

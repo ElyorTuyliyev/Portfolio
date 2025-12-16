@@ -7,9 +7,6 @@ const Skills = () => {
   return (
     <SkillStyle>
       <Box className="skill__wrapper">
-        <Typography variant="h2" className="skill__title">
-          Skills
-        </Typography>
         <Box className="skill__img-wrapper">
           {CARD_TYPE.map(({ alt, img, link }) => (
             <Card alt={alt} img={img} link={link} />
