@@ -22,7 +22,7 @@ export const CONTACTS: ContactsType[] = [
   },
   {
     title: "Linkedin:",
-    text: "www.linkedin.com/in/elyor-tuyliev-614a512a4",
+    text: "https://www.linkedin.com/in/elyor-web-developer/",
     icon: <LinkedIn />,
   },
   {
@@ -37,7 +37,7 @@ export const CONTACTS: ContactsType[] = [
   },
   {
     title: "Instagram:",
-    text: "e1_programmer",
+    text: "stackmaster_elyor",
     icon: <Instagram />,
   },
   {

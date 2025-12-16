@@ -10,7 +10,7 @@ export const AboutStyle = styled.div`
   }
 
   .about__img {
-    width: 400px;
+    width: 400px ;
     border-radius: 50%;
 
   }

@@ -20,11 +20,11 @@ const links: LinkType[] = [
     homeIcon: <TelegramIcon />,
   },
   {
-    link: "https://www.instagram.com/e1_programmer/",
+    link: "https://www.instagram.com/stackmaster_elyor/",
     homeIcon: <Instagram />,
   },
   {
-    link: "https://www.linkedin.com/feed/",
+    link: "https://www.linkedin.com/in/elyor-web-developer/",
     homeIcon: <LinkedIn />,
   },
   {
