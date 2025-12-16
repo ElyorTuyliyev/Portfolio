@@ -7,13 +7,14 @@ const HeaderStyle = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 16px 0;
+    margin-bottom:15% ;
   }
 
   .header__title {
     color: ${colors.grey[50]};
     text-decoration:none;
     font-style: italic;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 600;
   }
 

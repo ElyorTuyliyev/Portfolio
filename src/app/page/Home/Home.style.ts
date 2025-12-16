@@ -58,7 +58,8 @@ export const HomeStyle = styled.main`
   }
 
   .home__img-wrapper {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     img {
       box-shadow: 0 0 500px ${colors.blue[500]};
       width: 100%;
@@ -67,7 +68,7 @@ export const HomeStyle = styled.main`
   }
 
   .home__btn {
-    margin-top: 24px;
+    margin-top: 40px;
     text-transform: capitalize;
     border-radius: 8px;
     box-shadow: 0 0 10px #2196f3;
@@ -77,6 +78,24 @@ export const HomeStyle = styled.main`
     }
     :hover {
       box-shadow: 0 0 11px #2196f3;
+    }
+  }
+
+  @media screen and (max-width: 1010px) {
+    .home__wrapper {
+      flex-direction: column-reverse;
+      align-items: start;
+    }
+
+    .home__links-me {
+      flex-wrap: wrap;
+    }
+
+    .home__me-name {
+      font-size: 48px;
+    }
+    .home__text-dev {
+    height: 90px;
     }
   }
 `;

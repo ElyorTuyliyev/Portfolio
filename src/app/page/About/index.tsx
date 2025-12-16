@@ -9,7 +9,7 @@ const About = () => {
     <AboutStyle>
       <Box className="about__wrapper">
         <Box className="about__img-wrapper">
-          <img className="about__img" src={Me} alt="me" />
+          <img className="about__img" src={Me} alt="me-img" />
         </Box>
         <Box className="about__text-wrapper">
           <Typography className="about__text">
@@ -21,14 +21,6 @@ const About = () => {
             component-based architecture, state management, and adaptive UI
             design. My focus is on writing clean, scalable, and maintainable
             code that delivers seamless user experiences.
-          </Typography>
-          <Typography  className="about__text">
-            I am passionate about creating digital solutions that streamline
-            business processes, including cost calculation systems, product and
-            salary management modules, and e-commerce platforms. I thrive in
-            collaborative and dynamic environments, eager to learn new
-            technologies, follow best practices, and contribute to innovative
-            projects.
           </Typography>
         </Box>
       </Box>
