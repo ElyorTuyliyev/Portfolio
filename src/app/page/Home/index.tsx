@@ -2,7 +2,7 @@ import { HomeStyle } from "./Home.style";
 import { Box, Button, Typography } from "@mui/material";
 
 import Me from "../../assets/imgs/photo_2024-05-30_00-30-13.jpg";
-import resume from "./assets/resume-new.pdf";
+import resume from "./assets/elyorTuyliyev.pdf";
 
 import { Link } from "react-router-dom";
 import links from "./constants";

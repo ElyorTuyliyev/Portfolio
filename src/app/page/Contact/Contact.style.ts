@@ -37,4 +37,10 @@ export const ContactStyle = styled.div`
     display: flex;
     gap: 8px;
   }
+
+  @media screen and (max-width: 1000px) {
+    .contact__wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  }
 `;
